@@ -1,5 +1,10 @@
-<p id="notice"><%= notice %></p>
-
+<!-- <p id="notice"></p>
+<div id="notice" class="alert alert-warning alert-dismissible fade show" role="alert">
+  <%= notice %>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div> -->
 <p>
   <strong>First name:</strong>
   <%= @friend.first_name %>
@@ -19,6 +24,3 @@
   <strong>Phone:</strong>
   <%= @friend.phone %>
 </p>
-
-<%= link_to 'Edit', edit_friend_path(@friend) %> |
-<%= link_to 'Back', friends_path %>
