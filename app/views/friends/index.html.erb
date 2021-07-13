@@ -1,7 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Friends</h1>
-
 <table class="table table-bordered">
   <thead class="thead-dark">
     <tr>
@@ -20,9 +18,9 @@
         <td><%= friend.last_name %></td>
         <td><%= friend.email %></td>
         <td><%= friend.phone %></td>
-        <td><%= link_to 'Show', friend %></td>
-        <td><%= link_to 'Edit', edit_friend_path(friend) %></td>
-        <td><%= link_to 'Destroy', friend, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', friend, class:"btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_friend_path(friend), class:"btn btn-warning" %></td>
+        <td><%= link_to 'Destroy', friend, class:"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
